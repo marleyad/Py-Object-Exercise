@@ -4,7 +4,6 @@ import random
 class WordFinder:
     ...
 
-
     def __init__(self, path):
         """Read dictionary and reports # items read."""
 
@@ -26,7 +25,7 @@ class WordFinder:
         return random.choice(self.words)
 
 class SpecialWordFinder(WordFinder):
-    """Specialized WordFinder that excludes blank lines/comments.
+    """ Specialized WordFinder that excludes blank lines/comments.
     
     >>> swf = SpecialWordFinder("complex.txt")
     3 words read
@@ -42,7 +41,7 @@ class SpecialWordFinder(WordFinder):
     """
 
     def parse(self, dict_file):
-        """Parse dict_file -> list of words, skipping blanks/comments."""
+        """ Parse dict_file -> list of words, skipping blanks/comments."""
 
         return [w.strip() for w in dict_file
                 if w.strip() and not w.startswith("#")]
