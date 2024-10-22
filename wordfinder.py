@@ -1,4 +1,4 @@
-"""Word Finder: finds random words from a dictionary. """
+""" Word Finder: finds random words from a dictionary. """
 import random
 
 class WordFinder:
