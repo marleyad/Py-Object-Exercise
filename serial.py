@@ -1,4 +1,4 @@
-""" Python serial number generator """
+""" Python serial number generator """ 
 
 class SerialGenerator:
     """Machine to create unique incrementing serial numbers.
